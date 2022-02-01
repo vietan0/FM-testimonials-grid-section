@@ -58,6 +58,17 @@ main {
 	gap: 1rem;
 }
 
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+}
+
 .testimonial {
 	padding: 1.75rem;
 	border-radius: 12px;
@@ -118,12 +129,12 @@ main {
 	line-height: 1.5;
 }
 
-picture{
+picture {
 	border-radius: 50%;
 	position: relative;
 }
 
-picture::after{
+picture::after {
 	content: "";
 	box-shadow: 0 0 0 3px var(--violet);
 	mix-blend-mode: screen;
@@ -151,7 +162,7 @@ picture::after{
 	opacity: 0.8;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 980px) {
 	main {
 		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 		max-width: 1124px;
@@ -168,8 +179,8 @@ picture::after{
 	}
 }
 
-@media (max-width: 420px){
-	:root{
+@media (max-width: 420px) {
+	:root {
 		font-size: 15px;
 	}
 }
