@@ -33,13 +33,13 @@ a {
 }
 
 .attribution {
-	display: none;
-	font-size: 11px;
+	font-size: 14px;
+	font-weight: 500;
 	text-align: center;
 }
 
 .attribution a {
-	color: hsl(228, 45%, 44%);
+	color: hsl(228, 79%, 54%);
 }
 
 .hl {
@@ -48,9 +48,12 @@ a {
 
 body {
 	margin: 0;
-	display: flex;
 	padding: clamp(24px, 5vw, 80px);
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
 	justify-content: center;
+	align-items: center;
 }
 
 main {
